@@ -22,6 +22,7 @@ public class MainActivity extends Activity implements Comunicator {
 	private TableRow shanchu; 
 	private TableRow word; 
 	ImageView imageView;
+	TextView textView1;
 	TextView tv;
 
 	@Override
@@ -66,12 +67,12 @@ public class MainActivity extends Activity implements Comunicator {
 		}
 
 	protected View ShowWord() {
-	//	index++;
+
 		// TODO Auto-generated method stub
 		TextView btn=new TextView(this);
 		btn.setId(index);
 		btn.setLayoutParams(new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
-		btn.setText("text not sent here!!!!! "); //這一行是可以顯示文字的
+//		btn.setText("text not sent here!!!!! "); //這一行是可以顯示文字的
 		return btn;
 	}
 
@@ -98,7 +99,7 @@ protected View AddButton() {
 			
 			imageView1.setImageURI(uri);
 		}
-//		TextView textView1 = (TextView) findViewById(index);
+	//	TextView textView1 = (TextView) findViewById(index);
 //		textView1.setText(text);
 			tv.setText(text);
 
